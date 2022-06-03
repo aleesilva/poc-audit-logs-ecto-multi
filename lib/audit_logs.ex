@@ -1,6 +1,5 @@
 defmodule Users.AuditLogs do
   def handle(data) do
-    Map.delete(data.users, :__meta__)
 
     response =
       data.users
